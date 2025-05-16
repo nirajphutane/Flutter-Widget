@@ -21,21 +21,15 @@
 ### ❓ What Happens When setState() or Any State Change Occurs?
 
 - Widgets are recreated every time a state changes (e.g., setState, InheritedWidget notifies, BLoC, Provider, or a parent widget rebuilds).
-
 - This process is called a rebuild. Rebuild is a term used for widget tree reconstruction only.
-
 - A rebuild means the build() method is executed again, and new widget instances are created.
 
 ### 💡 Optimization Techniques Summary
 
 - State management ensures that only the affected widgets rebuild.
-
 - Use const widgets to prevent unnecessary rebuilds of immutable widgets.
-
 - Use Builder widgets for smaller, targeted rebuilds.
-
 - Use Custom Render Objects to optimize layout and painting.
-
 - Use StatefulWidget only when dynamic state changes are needed.
 
 ---
